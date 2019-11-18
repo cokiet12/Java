@@ -1,8 +1,11 @@
 
+import java.util.Scanner;
 public class 구구단 {
 	public static void main(String[] args) {
 		short 단 = 2;
-		short 열 = 3;
+		Scanner scan = new Scanner(System.in);
+		System.out.println("구구단 표시 열 개수 입력 : ");
+		short 열 = scan.nextShort();
 		
 		for(;단 <= 9; 단 += 열) {
 			for(int 수 = 1; 수 <=9; 수++) {
